@@ -1,0 +1,32 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 15:39 ?        00:00:00 /sbin/init
+root           2       1  0 15:39 ?        00:00:00 /init
+root           6       2  0 15:39 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          60       1  0 15:39 ?        00:00:00 /lib/systemd/systemd-journald
+root          83       1  0 15:39 ?        00:00:00 /lib/systemd/systemd-udevd
+root          93       1  0 15:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/core20_2599.snap /snap/core20/2599 -o ro,nodev,allow_other,suid
+root          94       1  0 15:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/code_206.snap /snap/code/206 -o ro,nodev,allow_other,suid
+root          99       1  0 15:39 ?        00:00:01 snapfuse /var/lib/snapd/snaps/snapd_25202.snap /snap/snapd/25202 -o ro,nodev,allow_other,suid
+systemd+     108       1  0 15:39 ?        00:00:00 /lib/systemd/systemd-resolved
+systemd+     109       1  0 15:39 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root         159       1  0 15:39 ?        00:00:00 /usr/sbin/cron -f -P
+message+     162       1  0 15:39 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         177       1  0 15:39 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       178       1  0 15:39 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         183       1  0 15:39 ?        00:00:00 /usr/lib/snapd/snapd
+root         194       1  0 15:39 ?        00:00:00 /lib/systemd/systemd-logind
+root         226       1  0 15:39 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+root         230       1  0 15:39 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         242       1  0 15:39 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         342       2  0 15:39 ?        00:00:00 /init
+root         343     342  0 15:39 ?        00:00:00 /init
+user         344     343  0 15:39 pts/0    00:00:00 -bash
+root         345       2  0 15:39 pts/1    00:00:00 /bin/login -f
+user         396       1  0 15:39 ?        00:00:00 /lib/systemd/systemd --user
+user         397     396  0 15:39 ?        00:00:00 (sd-pam)
+user         402     345  0 15:39 pts/1    00:00:00 -bash
+root         413     344  0 15:39 pts/0    00:00:00 su sangwoo
+sangwoo      418       1  0 15:39 ?        00:00:00 /lib/systemd/systemd --user
+sangwoo      419     418  0 15:39 ?        00:00:00 (sd-pam)
+sangwoo      424     413  0 15:39 pts/0    00:00:00 bash
+sangwoo      541     424  0 15:52 pts/0    00:00:00 ps -ef
