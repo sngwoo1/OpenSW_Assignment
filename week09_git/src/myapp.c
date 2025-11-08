@@ -17,6 +17,12 @@ double calculate(char*op, double a, double b)
     else if (strcmp(op, "/")==0) {
         return div(a,b);
     }
+    else if (strcmp(op, "^")==0) {
+        return pows(a,b);
+    }
+    else if (strcmp(op, "%")==0) {
+        return mod(a,b);
+    }
     else {
         printf("Unsupported operation: %s\n", op);
         return 0;
