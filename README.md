@@ -26,3 +26,5 @@ Each directory corresponds to a specific assignment or lecture.
 * **`week08_make_v2/`**: Advanced Makefiles, including recursive call.
 * **`week09_git/`**: Assignments on Git version control (branching, merging).
 * **`week11_syscall_file/`**: File I/O system calls
+* **`week12_syscall_process/`**: System call practice focused on process creation & control (`fork`, `execve`, `waitpid`, etc.)
+* **`week13_signal/`**: Signal handling practice (`sigaction`, `signal blocking`, `pending signal`, `alarm`, `kill`, etc.)
